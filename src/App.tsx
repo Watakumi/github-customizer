@@ -2,6 +2,9 @@ import './App.css';
 import { Helmet } from 'react-helmet';
 
 function App() {
+  const style: React.CSSProperties = {
+    backgroundColor: '#412554',
+  };
   return (
     <>
       <Helmet>
@@ -12,13 +15,28 @@ function App() {
           rel="stylesheet"
         ></link>
       </Helmet>
-      <div className="flex justify-center w-1/2 h-64 bg-purple">
-        <div>
-          <div className="text-8xl font-rammetto content-center text-yellow content-center">
+
+      <svg
+        version="1.1"
+        width="800"
+        height="350"
+        xmlns="http://www.w3.org/2000/svg"
+        style={style}
+      >
+        <g>
+          <text
+            x="50%"
+            y="57%"
+            textAnchor="middle"
+            fontFamily="Rammetto One"
+            fontWeight="bold"
+            fontSize="96"
+            fill="#FFE4A8"
+          >
             WATAKUMI
-          </div>
-        </div>
-      </div>
+          </text>
+        </g>
+      </svg>
     </>
   );
 }
